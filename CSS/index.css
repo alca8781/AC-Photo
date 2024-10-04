@@ -1,0 +1,78 @@
+html{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+/* SAME FOR ALL PAGES : NAV AND LOGO */
+nav{
+    padding: .5em;
+    display:flex; 
+    justify-content: space-evenly;
+    position: sticky;
+    top:0; 
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}  
+nav a {
+    color: rgb(79, 94, 125);
+    text-decoration: none;
+    padding: .2em .5em;
+    margin:0 20pt; 
+    text-align: left;
+} 
+a{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 15px;
+    font-size: 12pt;
+    line-height: 1.5em;
+}
+.heading{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.heading img{
+    height:100px; 
+    padding: 20px;
+
+}
+
+
+/*HOME PAGE */
+#HP h1{
+font-family: "Rozha One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25pt;
+  margin-bottom: 5px;
+  padding: none;
+  text-align: center;
+  color: white;
+}
+
+#HP p{
+    text-align: center;
+    color: white;
+}
+
+#HP .photography{
+    margin-top: 30pt;
+    display: grid; 
+    grid-template-columns: 1fr 1fr ;
+    background-color: rgb(79, 87, 104);
+}
+
+#HP .no1{
+    margin-top: 100pt;
+}
+
+#HP img{
+    padding: 10px;
+}
