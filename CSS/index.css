@@ -1,78 +1,246 @@
-html{
-    margin-left: 90px;
-    margin-right: 90px;
+@media(min-width:860px){
+    html {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* SAME FOR ALL PAGES : NAV AND LOGO */
+    nav {
+        padding: .5em;
+        display: flex;
+        justify-content: space-evenly;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+    
+    nav a {
+        color: rgb(79, 94, 125);
+        text-decoration: none;
+        padding: .2em .5em;
+        margin: 0 20pt;
+        text-align: left;
+    }
+    
+    a {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        margin-left: 15px;
+        font-size: 12pt;
+        line-height: 1.5em;
+    }
+    
+    .heading {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .heading img {
+        height: 100px;
+        padding: 20px;
+    
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        
+    }
+    
+    #instagram-button {
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin: 0; 
+    }
+    
+    #instagram-logo {
+        width: 30px; 
+        height: auto;
+        transition: transform 0.3s; 
+    }
+    
+    #instagram-button:hover #instagram-logo {
+        transform: scale(1.1); 
+    }
+    
+    footer{
+        font-size: x-small; 
+        text-align: center;
+    }
+    
+    
+    /*HOME PAGE */
+    #HP h1 {
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25pt;
+        margin-bottom: 5px;
+        padding: none;
+        text-align: center;
+        color: white;
+    }
+    
+    #HP p {
+        text-align: center;
+        color: white;
+    }
+    
+    #HP {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        background-color: rgb(79, 87, 104);
+        margin-top: 30pt;
+    }
+    
+    #HP .no1 {
+        align-self: center;
+        margin: 50px;
+    
+    }
+    
+    #HP .no2 img {
+        padding: 20px;
+        height: 400px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap:wrap;
+        background-color: rgb(79, 87, 104);
+        margin-top: 30pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+   
+    #aboutMe .no3 img {
+        padding: 8px;
+        height: 300px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    #aboutMe .no4 {
+        align-self: center;
+        margin: 25px;
+    
+    }
+    
+    #aboutMe p {
+        color: white; 
+        text-align: left;
+    }
+
+    #aboutMe #book{
+        align-self: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 12pt;
+    }
+
+    
+    /*CONTACT PAGE */
+    .contactForm h1 {
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25pt;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        padding: none;
+        text-align: center;
+        color: rgb(79, 87, 104);
+        
+    }
+    .contactForm{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+        margin: 20px;
+
+    }
+
+
+    .FormInput{
+        margin-bottom: 20px;
+        margin-left: 250px;
+        
+        
+    }
+    label{
+        display: block;
+        margin-bottom: 5px;
+    }
+    input{
+        
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    textarea {
+        width: 70%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #submit{
+        background-color:rgb(79, 87, 104);
+        color:white; 
+        padding: 12px;
+        font-size: 12pt; 
+
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+
+        margin-left: 250px;
+
+    }
 }
 
-/* SAME FOR ALL PAGES : NAV AND LOGO */
-nav{
-    padding: .5em;
-    display:flex; 
-    justify-content: space-evenly;
-    position: sticky;
-    top:0; 
-}
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex; 
-}  
-nav a {
-    color: rgb(79, 94, 125);
-    text-decoration: none;
-    padding: .2em .5em;
-    margin:0 20pt; 
-    text-align: left;
-} 
-a{
+p{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    margin-left: 15px;
     font-size: 12pt;
     line-height: 1.5em;
 }
-.heading{
-    display: block;
-    margin: auto;
-    text-align: center;
-}
-.heading img{
-    height:100px; 
-    padding: 20px;
 
-}
-
-
-/*HOME PAGE */
-#HP h1{
-font-family: "Rozha One", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25pt;
-  margin-bottom: 5px;
-  padding: none;
-  text-align: center;
-  color: white;
-}
-
-#HP p{
-    text-align: center;
+h2{
+    font-family: "Slabo 13px", serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
-}
-
-#HP .photography{
-    margin-top: 30pt;
-    display: grid; 
-    grid-template-columns: 1fr 1fr ;
-    background-color: rgb(79, 87, 104);
-}
-
-#HP .no1{
-    margin-top: 100pt;
-}
-
-#HP img{
-    padding: 10px;
+    font-size: 16pt;
 }
