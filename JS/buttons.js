@@ -11,6 +11,6 @@ document.getElementById("book").addEventListener("click", ()=> {
 });
 
 // View Galleries 
-document.getElementById("findP").addEventListener("click", ()=> {
+document.getElementById("look-for").addEventListener("click", ()=> {
     window.location.href = 'FindGal.html'; 
 });
