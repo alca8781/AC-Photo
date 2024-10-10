@@ -1,11 +1,10 @@
 @media(min-width:860px){
-    html {
+    /* html {
         max-width: 1200px;
         width: 90%;
         margin: 0 auto;
     }
     
-    /* SAME FOR ALL PAGES : NAV AND LOGO */
     nav {
         padding: .5em;
         display: flex;
@@ -81,11 +80,13 @@
     footer{
         font-size: x-small; 
         text-align: center;
-    }
+    } */
 
 
     /*Shop */
-    #shop h1{
+
+
+    #shop h1 {
         font-family: "Rozha One", serif;
         font-weight: 400;
         font-style: normal;
@@ -94,37 +95,70 @@
         margin-bottom: 40px;
         padding: none;
         color: rgb(79, 87, 104);
+        
     }
-    #find{
+
+    #shop {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        /* gap:50px;  */
+
+    }
+
+    #shop h2 {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14pt;
+       margin-bottom: 50px;
+    }
+
+    #shop img {
+       
+        height: 470px;
+    }
+
+    #find {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         background-color: rgb(79, 87, 104);
         margin-top: 30pt;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        
     }
-    #find .Find1{
+
+    #find .Find1 {
         align-self: center;
         margin: 10px;
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
-        color:white; 
+        color: white;
         line-height: 1.5em;
 
     }
-    #find .Find2 img{
+
+    #find .Find2 img {
         margin-left: 130px;
         padding: 8px;
         height: 400px;
         width: auto;
         max-width: 100%;
     }
-    #look-for{
+
+    #look-for {
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -132,20 +166,51 @@
         margin-top: 60px;
         font-size: 14pt;
     }
-#shop{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap:wrap;
-    
-
-}
-    #shop h2{
-        text-align: center;
+ 
+    #shop a {
+        text-decoration: none;
+        color: rgb(79, 87, 104);
+        
     }
-#shop img{
-    padding: 10pt; 
-}
+    #shop a:hover {
+        color:rgb(185, 180, 180); 
+        transform: scale(1.5); 
+    }
 
-} 
+
+    #prices {
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #prices table {
+        margin-top: 30px;
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+    }
+       
+    #prices th {
+        font-weight: 400;
+        background-color:rgb(79, 87, 104);
+        color: white;
+        font-size: 16pt;
+
+        padding: 20px;
+        text-align: left;
+
+
+    }
+    
+    #prices td {
+        font-size: 13pt;
+        color: rgb(79, 94, 125);
+
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid rgb(153, 154, 156);
+    }
+}

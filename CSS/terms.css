@@ -1,0 +1,20 @@
+
+    /* Terms */
+    #terms {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #terms h1 {
+        text-align: center;
+    }
+
+    #terms p {
+        text-align: left;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 14pt;
+        line-height: 1.5em;
+    }
