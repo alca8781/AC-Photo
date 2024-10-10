@@ -1,10 +1,10 @@
-@media(min-width:860px){
+@media(min-width:860px) {
     html {
         max-width: 1200px;
         width: 90%;
         margin: 0 auto;
     }
-    
+
     /* SAME FOR ALL PAGES : NAV AND LOGO */
     nav {
         padding: .5em;
@@ -13,16 +13,15 @@
         position: sticky;
         top: 0;
         background-color: white;
-        
+
     }
-    
     nav ul {
         margin: 0;
         padding: 0;
         list-style: none;
         display: flex;
     }
-    
+
     nav a {
         color: rgb(79, 94, 125);
         text-decoration: none;
@@ -30,7 +29,7 @@
         margin: 0 20pt;
         text-align: left;
     }
-    
+
     a {
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -40,52 +39,53 @@
         font-size: 12pt;
         line-height: 1.5em;
     }
-    
+
     .heading {
         display: block;
         margin: auto;
         text-align: center;
     }
-    
+
     .heading img {
         height: 100px;
         padding: 20px;
-    
+
     }
+
     .social {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 40px;
-        
+
     }
-    
+
     #instagram-button {
         background: none;
         border: none;
         padding: 0;
         cursor: pointer;
-        margin: 0; 
+        margin: 0;
     }
-    
+
     #instagram-logo {
-        width: 30px; 
+        width: 30px;
         height: auto;
-        transition: transform 0.3s; 
+        transition: transform 0.3s;
     }
-    
+
     #instagram-button:hover #instagram-logo {
-        transform: scale(1.1); 
+        transform: scale(1.1);
     }
-    
-    footer{
-        font-size: x-small; 
+
+    footer {
+        font-size: x-small;
         text-align: center;
     }
-    
-    
+
+
     /*HOME PAGE */
-    
+
     #HP h1 {
         font-family: "Rozha One", serif;
         font-weight: 400;
@@ -96,28 +96,28 @@
         text-align: center;
         color: white;
     }
-    
+
     #HP p {
         text-align: center;
         color: white;
     }
-    
+
     #HP {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         background-color: rgb(79, 87, 104);
         margin-top: 30pt;
     }
-    
+
     #HP .no1 {
         align-self: center;
         margin: 50px;
-    
+
     }
-    
+
     #HP .no2 img {
         padding: 20px;
         height: 400px;
@@ -130,13 +130,13 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         background-color: rgb(79, 87, 104);
         margin-top: 30pt;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-   
+
     #aboutMe .no3 img {
         padding: 8px;
         height: 300px;
@@ -147,15 +147,15 @@
     #aboutMe .no4 {
         align-self: center;
         margin: 25px;
-    
+
     }
-    
+
     #aboutMe p {
-        color: white; 
+        color: white;
         text-align: left;
     }
 
-    #aboutMe #book{
+    #aboutMe #book {
         align-self: center;
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -163,16 +163,17 @@
         font-style: normal;
         font-size: 12pt;
     }
-    #aboutMe p{
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12pt;
-    line-height: 1.5em;
+
+    #aboutMe p {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 12pt;
+        line-height: 1.5em;
     }
 
-    #aboutMe h2{
+    #aboutMe h2 {
         font-family: "Slabo 13px", serif;
         font-weight: 400;
         font-style: normal;
@@ -180,7 +181,7 @@
         font-size: 16pt;
     }
 
-    
+
     /*CONTACT PAGE */
     .contactForm h1 {
         font-family: "Rozha One", serif;
@@ -192,9 +193,10 @@
         padding: none;
         text-align: center;
         color: rgb(79, 87, 104);
-        
+
     }
-    .contactForm{
+
+    .contactForm {
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -204,23 +206,26 @@
 
     }
 
-    .FormInput{
+    .FormInput {
         margin-bottom: 20px;
         margin-left: 250px;
-        
-        
+
+
     }
-    label{
+
+    label {
         display: block;
         margin-bottom: 5px;
     }
-    input{
-        
+
+    input {
+
         width: 70%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
+
     textarea {
         width: 70%;
         padding: 10px;
@@ -228,11 +233,11 @@
         border-radius: 4px;
     }
 
-    #submit{
-        background-color:rgb(79, 87, 104);
-        color:white; 
+    #submit {
+        background-color: rgb(79, 87, 104);
+        color: white;
         padding: 12px;
-        font-size: 12pt; 
+        font-size: 12pt;
 
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -245,7 +250,15 @@
     }
 
     /*Shop */
-    #shop h1{
+    .ShopTitle h1{
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal; 
+    }
+
+    #shop h1 {
         font-family: "Rozha One", serif;
         font-weight: 400;
         font-style: normal;
@@ -254,61 +267,143 @@
         margin-bottom: 40px;
         padding: none;
         color: rgb(79, 87, 104);
+        
     }
-    #find{
+
+    #shop {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        /* gap:50px;  */
+
+    }
+
+    #shop h2 {
+        text-align: center;
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14pt;
+       margin-bottom: 50px;
+    }
+
+    #shop img {
+       
+        height: 470px;
+    }
+
+    #find {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         background-color: rgb(79, 87, 104);
         margin-top: 30pt;
         padding-top: 20px;
         padding-bottom: 20px;
+
+        
     }
-    #find .Find1{
+
+    #find .Find1 {
         align-self: center;
         margin: 10px;
-
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
-        color:white; 
+        color: white;
         line-height: 1.5em;
 
     }
-    #find .Find2 img{
+
+    #find .Find2 img {
         margin-left: 130px;
         padding: 8px;
         height: 400px;
         width: auto;
         max-width: 100%;
     }
-    #findPhotosBtn{
+
+    #look-for {
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
         margin-top: 60px;
         font-size: 14pt;
+    }
+ 
+    #shop a {
+        text-decoration: none;
+        color: rgb(79, 87, 104);
+        
+    }
+    #shop a:hover {
+        color:rgb(185, 180, 180); 
+        transform: scale(1.5); 
+    }
+
+
+    #prices {
+        margin: 60px auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    #prices table {
+        margin-top: 30px;
+        width: 100%;
+        border-collapse: collapse;
+        font-family: "Raleway", sans-serif;
+        font-weight: 200;
+    }
+       
+    #prices th {
+        font-weight: 400;
+        background-color:rgb(79, 87, 104);
+        color: white;
+        font-size: 16pt;
+
+        padding: 20px;
+        text-align: left;
 
 
     }
+    
+    #prices td {
+        font-size: 13pt;
+        color: rgb(79, 94, 125);
+
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid rgb(153, 154, 156);
+    }
+    
+    
+
 
     /* Portfolio */
 
-
+ 
 
     /* Terms */
-    #terms{
+    #terms {
         padding-left: 200px;
         padding-right: 200px;
     }
-    #terms h1{
+
+    #terms h1 {
         text-align: center;
     }
-    #terms p{
+
+    #terms p {
         text-align: left;
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
@@ -317,5 +412,25 @@
         font-size: 14pt;
         line-height: 1.5em;
     }
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

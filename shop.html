@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="CSS/index.css" rel="stylesheet">
-        <script src="JS/buttons.js" defer></script> 
-       
-        
-        <!-- fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
-    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/index.css" rel="stylesheet">
+    <script src="JS/buttons.js" defer></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Shop</title>
 </head>
+
+
 <body>
 <!-- Nav and logo -->
 <section class="heading">
@@ -35,11 +41,26 @@
 </nav>
 
 <section id = "shop"> 
-    <h1> Services </h1>
+    
+    <div class="portraits"> 
     <img src="Images/Shop/portrait.jpg">
+    <a href="contact.html"><h2> PORTRAIT</h2></a>
+    </div>
+
+    <div class="wedding">
     <img src="Images/Shop/wedding.jpg">
-    <img src="Images/Shop/family.jpg">
+    <a href="contact.html"><h2> WEDDING</h2></a>
+    </div>
+
+    <div class="family">
+    <img src="Images/Shop/family2.jpg">
+    <a href="contact.html"><h2> FAMILY</h2></a>
+    </div>
+
+    <div class="events">
     <img src="Images/Shop/event.jpg">
+    <a href="contact.html"><h2> EVENT</h2></a>
+    </div>
 </section>
 
 <section id = "find"> 
@@ -52,7 +73,7 @@
             click find your photos bellow to view.
         </p>
 
-        <button id="findPhotosBtn">Find Your Photos</button>
+        <button id="look-for">Find Your Photos</button>
 
         
     </div>
@@ -64,9 +85,92 @@
 
 </section>
 
-<section id = "prices"> 
-    <h1> Price list </h1>
+
+
+
+<section id="prices">
+    <table>
+        <thead>
+            <tr>
+                <th>Services</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Studio Shoot</td>
+                <td>$200/hr</td>
+            </tr>
+            <tr>
+                <td>Location Shoot</td>
+                <td>$220/hr</td>
+            </tr>
+            <tr>
+                <td>Event Coverage</td>
+                <td>$250/hr</td>
+            </tr>
+            <tr>
+                <td>Wedding</td>
+                <td>By Inquiry</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            
+        </tbody>
+
+
+        <thead>
+            <tr>
+                <th>Digital Files</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Single Photo</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>20 Photos</td>
+                <td>$140</td>
+            </tr>
+            <tr>
+                <td>50 Photos</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>100 Photos</td>
+                <td>$500</td>
+            </tr>
+        </tbody>
+
+        <thead>
+            <tr>
+                <th>Prints</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Small Print  <em><br><br> (6x6 or smaller)  </td>
+                <td>$17</td>
+            </tr>
+            <tr>
+                <td>Large Print <em><br><br> ( up to 8x12)</td>
+                <td>$23</td>
+            </tr>
+            <tr>
+                <td>XL Print <em><br><br> ( up to 12x18) </td>
+                <td>$36</td>
+            </tr>
+            
+        </tbody>
+
+    </table>
 </section>
+
 
 
 
