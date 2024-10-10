@@ -1,4 +1,4 @@
- /*CONTACT PAGE */
+@media(min-width:860px) {
  .contactForm h1 {
     font-family: "Rozha One", serif;
     font-weight: 400;
@@ -64,3 +64,4 @@ textarea {
     margin-left: 250px;
 
 }
+} 
