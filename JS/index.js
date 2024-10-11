@@ -6,11 +6,7 @@ document.getElementById("instagram-button").addEventListener("click", ()=> {
 
 
 // Book a shoot button
-document.getElementById("book").addEventListener("click", ()=> {
+document.querySelector("#book").addEventListener("click", function() {
     window.location.href = 'contact.html'; 
 });
 
-// View Galleries 
-document.getElementById("look-for").addEventListener("click", ()=> {
-    window.location.href = 'FindGal.html'; 
-});

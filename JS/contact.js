@@ -13,3 +13,15 @@ document.getElementById('FormInput').addEventListener('submit', function(event){
         document.getElementById('FormMessage').innerText = 'Please fill out all fields';
     }
 })
+
+
+
+// Instagram button 
+document.getElementById("instagram-button").addEventListener("click", ()=> {
+    window.location.href = 'https://www.instagram.com/ally.cady.photography/'; 
+});
+
+// View Galleries 
+document.getElementById("look-for").addEventListener("click", ()=> {
+    window.location.href = 'FindGal.html'; 
+});
