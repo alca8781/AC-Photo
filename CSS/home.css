@@ -73,6 +73,7 @@
     font-weight: 300;
     font-style: normal;
     font-size: 12pt;
+    text-decoration: none;
 }
 
 #aboutMe p {
@@ -143,7 +144,7 @@
         align-items: center;
         flex-wrap: wrap;
         background-color: rgb(79, 87, 104);
-        margin-top: 30pt;
+        margin-top: 10pt;
         padding-top: 20px;
         padding-bottom: 20px;
         border-radius: 4px;
@@ -167,6 +168,7 @@
         margin-left: 120px;
         margin-right: auto;
         border-radius: 4px;
+        text-decoration: none;
     }
 
     #aboutMe p {

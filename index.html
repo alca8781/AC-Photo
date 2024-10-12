@@ -23,29 +23,39 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <title>Ally Cady Photography</title>
 </head>
 
 <body>
-<!-- Nav and logo -->
-    <section class="heading">
-        <img src="Images/logo png.png">
-    </section>
-    <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="shop.html">SHOP</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="terms.html">TERMS & FAQ </a></li>
-        </ul>
-    </nav>
+    <h1 class="sr-only"> Logo & Navigation</h1>
+    <!-- Nav and logo -->
+    <header>
+        <section id="headingImg">
+            <h1 id="logo-title" class="sr-only">Ally Cady Photography Logo</h1>
+            <img src="Images/logo png.png" alt="Ally Cady Photography Logo">
+        </section>
 
+        <nav>
+            <h1 class="sr-only">Main Nav</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="terms.html">Terms & FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="HP">
-     
+    <h1 class="sr-only"> Home Page</h1>
+
+    <div id="Home Page">
+
+        <section id="HP">
             <div class="no1">
                 <h1> Ally Cady Photography</h1>
                 <p> Colorado Photographer</p>
@@ -59,44 +69,47 @@
         </section>
 
 
-    <section id="aboutMe">
+        <section id="aboutMe">
 
-        <div class="no3"> 
-            <img src="Images/homepage/ac2.jpg">
-            <img src="Images/homepage/ac3.jpg">
-        </div>
-
-
-        <div class="no4">
-            <h2> About the Photographer</h2>
-            <br> 
-            <p>
-                I am a Colorado photographer based in Boulder. <br>  
-                I specialize in portrait and event photography. <br> 
-                Check out my portfolio and intstagram to see more of my work<br> <br>
+            <div class="no3">
+                <img src="Images/homepage/ac2.jpg">
+                <img src="Images/homepage/ac3.jpg">
+            </div>
 
 
-                Instagram: @ally.cady.photography <br> 
-                Send me an email with questions, bookings, or anything else! <br> 
-            </p>
-            <button id="book">Book Now</button>
-        </div>
-    </section>
+            <div class="no4">
+                <h2> About the Photographer</h2>
+                <br>
+                <p>
+                    I am a Colorado photographer based in Boulder. <br>
+                    I specialize in portrait and event photography. <br>
+                    Check out my portfolio and intstagram to see more of my work<br> <br>
 
 
+                    Instagram: @ally.cady.photography <br>
+                    Send me an email with questions, bookings, or anything else! <br>
+                </p>
+                <button id="book">Book Now</button>
+            </div>
+        </section>
 
-<!-- Social and copyright  -->
+    </div>
 
+    <!-- Social and copyright  -->
+    <footer>
+        <h1 class="sr-only"> Socials & Copyright </h1>
 
-
-<footer> 
-    <section class="social">
-        <button id="instagram-button">
-            <img src="Images/insta-logo.jpg" alt="Instagram Logo" id="instagram-logo">
-        </button>
-    </section>
-    Copyright © 2017 Ally Cady Photography - All Rights Reserved.  
-</footer>
+        <section class="social">
+            <h2 class="sr-only">Instagram Link</h2>
+            <button id="instagram-button">
+                <img src="Images/insta-logo.jpg" alt="Instagram Logo" id="instagram-logo">
+            </button>
+        </section>
+        <section class="copyright">
+            <h2 class="sr-only">Copyright </h2>
+            Copyright © 2017 Ally Cady Photography - All Rights Reserved.
+        </section>
+    </footer>
 </body>
 
 </html>

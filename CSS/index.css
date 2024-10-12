@@ -1,8 +1,21 @@
 @media(min-width:860px) {
     html {
         max-width: 1200px;
+        height: 100%;
         width: 90%;
         margin: 0 auto;
+    }
+
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
     }
 
     nav {
@@ -39,13 +52,13 @@
         line-height: 1.5em;
     }
 
-    .heading {
+    #headingImg {
         display: block;
         margin: auto;
         text-align: center;
     }
 
-    .heading img {
+    #headingImg img {
         height: 100px;
         padding: 20px;
 
@@ -77,15 +90,13 @@
     }
 
     footer {
-        font-size: x-small;
-        text-align: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        color: rgb(79, 87, 104); 
-        padding: 10px;
-        background-color: white;
+    font-size: x-small;
+    text-align: center;
+    color: rgb(79, 87, 104); 
+    padding: 10px;
+    background-color: white;
+    margin-top: auto; 
+    width: 100%;
     }
 
     h1{
@@ -111,11 +122,24 @@
 }
 
 
-@media(max-width:600px) {
+@media(max-width:860px) {
     html {
         max-width: 350px;
-        width: 100%;
         margin: 0 auto;
+        height: 100%;
+        
+    }
+
+    .sr-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
     }
 
     nav {
@@ -150,13 +174,13 @@
         line-height: 1.5em;
     }
 
-    .heading {
+    #headingImg {
         display: block;
         margin: auto;
         text-align: center;
     }
 
-    .heading img {
+    #headingImg img {
         height: 30px;
         padding: 20px;
 
@@ -191,6 +215,11 @@
     footer {
         font-size: x-small;
         text-align: center;
+        color: rgb(79, 87, 104); 
+        padding: 8px;
+        background-color: white;
+        margin-top: auto; 
+        width: 100%;
     }
 
     h1{

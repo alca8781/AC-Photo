@@ -2,7 +2,7 @@
     html{
         max-width: 1000px;
     }
-    h1{
+    h2{
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -105,7 +105,7 @@
     html{
         max-width: 1000px;
     }
-    h1{
+    h2{
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
@@ -113,7 +113,7 @@
         margin-left: 15px;
         font-size: 10pt;
         line-height: 1.5em;
-        background-color:rgb(79, 94, 125);
+        background-color:rgb(79, 87, 104);
         color: white;
         padding: 15px 15px 15px 30px;
         margin-top: 50px;

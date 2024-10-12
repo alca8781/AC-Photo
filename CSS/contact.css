@@ -85,13 +85,14 @@ textarea {
        font-weight: 300;
        font-style: normal;
        text-align: left;
-       margin: 20px;
+       margin-bottom: 90px;
+       
    
    }
    
    .FormInput {
        margin-bottom: 10px;
-       margin-left: 10px;
+       
    
    
    }
