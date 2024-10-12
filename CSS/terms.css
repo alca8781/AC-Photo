@@ -7,15 +7,33 @@
 
     #terms h1 {
         text-align: center;
+        margin-top: 40pt;
     }
 
     #terms p {
-        text-align: left;
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
         font-size: 14pt;
+        line-height: 1.5em;
+    }
+}
+
+@media(max-width:860px) {
+    html {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #terms {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #terms h1 {
+        text-align: center;
+    }
+
+    #terms p {
+        font-size: 10pt;
         line-height: 1.5em;
     }
 }

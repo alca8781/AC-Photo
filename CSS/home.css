@@ -1,8 +1,6 @@
 @media(min-width:860px) {
 #HP h1 {
-    font-family: "Rozha One", serif;
-    font-weight: 400;
-    font-style: normal;
+
     font-size: 25pt;
     margin-bottom: 5px;
     padding: none;
@@ -94,3 +92,97 @@
     font-size: 16pt;
 }
 }
+
+
+@media(max-width:860px) {
+
+    #HP h1 {
+        font-size: 25pt;
+        margin-bottom: 15px;
+        padding: none;
+        text-align: Right;
+        margin-right: 10px;
+        color: white;
+    }
+    
+    #HP p {
+        text-align: right;
+        color: white;
+        font-size: 12pt;
+    }
+    
+    #HP {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(79, 87, 104);
+        margin-top: 30pt;
+
+        border-radius: 4px;
+    }
+    
+    #HP .no1 {
+        align-self: center;
+        margin: 10px;
+    
+    }
+    
+    #HP .no2 img {
+        padding: 10px;
+        height: 200px;
+        width: auto;
+        max-width: 100%;
+    }
+    
+    #aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(79, 87, 104);
+        margin-top: 30pt;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 4px;
+    }
+    
+    #aboutMe .no3 img {
+        padding: 1px;
+        height: 150px;
+        width: auto;
+        max-width: 100%;
+    }
+    
+    #aboutMe .no4 {
+        align-self: center;
+        margin: 10px;
+    
+    }
+    
+    #aboutMe #book {
+        align-self: center;
+        margin-left: 120px;
+        margin-right: auto;
+        border-radius: 4px;
+    }
+
+    #aboutMe p {
+
+        color: white;
+        font-style: normal;
+        font-size: 10pt;
+        line-height: 1.5em;
+        margin-left: 10px;
+    }
+    
+    #aboutMe h2 {
+        font-family: "Slabo 13px", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+        font-size: 16pt;
+    }
+    }

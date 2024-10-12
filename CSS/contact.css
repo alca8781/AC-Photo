@@ -62,6 +62,75 @@ textarea {
     text-align: left;
 
     margin-left: 250px;
-
+    border-radius: 4px;
 }
 } 
+
+
+@media(max-width:860px) {
+    .contactForm h1 {
+
+       font-size: 12pt;
+       margin-top: 20px;
+       margin-bottom: 40px;
+       padding: none;
+       text-align: center;
+       color: rgb(79, 87, 104);
+   
+   }
+   
+   .contactForm {
+       font-family: "Raleway", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 300;
+       font-style: normal;
+       text-align: left;
+       margin: 20px;
+   
+   }
+   
+   .FormInput {
+       margin-bottom: 10px;
+       margin-left: 10px;
+   
+   
+   }
+   
+   label {
+       display: block;
+       margin-bottom: 5px;
+       font-size: 10pt;
+   }
+   
+   input {
+   
+       width: 100%;
+       padding: 8px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+   }
+   
+   textarea {
+       width: 100%;
+       padding: 10px;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+   }
+   
+   #submit {
+       background-color: rgb(79, 87, 104);
+       color: white;
+       padding: 12px;
+       font-size: 8pt;
+   
+       font-family: "Raleway", sans-serif;
+       font-optical-sizing: auto;
+       font-weight: 300;
+       font-style: normal;
+       text-align: left;
+   
+       margin-left: 20px;
+       border-radius: 4px;
+   
+   }
+   } 
