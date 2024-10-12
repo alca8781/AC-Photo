@@ -103,14 +103,13 @@
 
 @media(max-width:860px) {
     html{
-        max-width: 1000px;
+        max-width: 350px;
     }
     h2{
         font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-weight: 300;
         font-style: normal;
-        margin-left: 15px;
         font-size: 10pt;
         line-height: 1.5em;
         background-color:rgb(79, 87, 104);
@@ -163,12 +162,12 @@
 
    
     .prev {
-        left: -30px; 
+        left: -20px; 
         border-radius: 3px 0 0 3px;
     }
 
     .next {
-        right: -30px; 
+        right: -20px; 
         border-radius: 0 3px 3px 0;
     }
 
