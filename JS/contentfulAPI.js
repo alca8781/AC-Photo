@@ -1,31 +1,36 @@
-import * as contentful from "contentful"
+
 const client = contentful.createClient({
-  // This is the space ID. A space is like a project folder in Contentful terms
-  space: 'rlx5jqzvnc1n',
-  // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
-  accessToken: '5OGYgwN18wUBl178FBfIyZvq2jNAGAoVUnVjBE7JoZU',
-})
-// This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token
-client.getSpace('rlx5jqzvnc1n')
-.then((space) => space.getEnvironment('PhotoGalleriesEnv'))
-  .then((environment) => {
-    "fields": {
-    "title": "Playsam Streamliner",
-    "file": {
-      "fileName": "quwowooybuqbl6ntboz3.jpg",
-      "contentType": "image/jpg",
-      "details": {
-        "image": {
-          "width": 600,
-          "height": 446
-        },
-        "size": 27187
-      },
-      "url": "//images.ctfassets.net/yadj1kx9rmg0/wtrHxeu3zEoEce2MokCSi/cf6f68efdcf625fdc060607df0f3baef/quwowooybuqbl6ntboz3.jpg"
-    }
-  }
+    space: 'xyzx0flf1kvl',
+    accessToken: 'YZEFnaM1EF0Yn0iwF8ZasRzJrJ7r7_GI0Aa8APUDDns'
   });
 
+  
+  client.getEntries().then(function (entries) {
+    // log the title for all the entries that have it
+    entries.items.forEach(function (entry) {
+      if (entry.fields.productName) {
+        console.log(entry.fields.productName);
+      }
+    });
+  });
 
+  const contentContainer = document.getElementById('content');
 
-
+  // Wedding 
+client.getEntries().then(function (entries) {
+  entries.items.forEach(function (entry) {
+    if (entry.fields.weddingID) {
+      const galleryTitle = document.createElement('h2');
+      galleryTitle.innerText = entry.fields.weddingID; 
+      contentContainer.appendChild(galleryTitle);
+    }
+    if (entry.fields.sleepyHollow) {
+      entry.fields.sleepyHollow.forEach(function (imageAsset) {
+        const img = document.createElement('img');
+        img.src = imageAsset.fields.file.url; 
+        img.style.width = '300px';
+        contentContainer.appendChild(img);
+      });
+    }
+  });
+});
