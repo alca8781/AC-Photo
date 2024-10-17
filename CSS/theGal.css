@@ -1,0 +1,11 @@
+h3{
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+
+}
+
+a img:hover{
+  transform: scale(1.1);
+}
