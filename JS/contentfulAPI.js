@@ -3,7 +3,56 @@ const client = contentful.createClient({
   accessToken: 'YZEFnaM1EF0Yn0iwF8ZasRzJrJ7r7_GI0Aa8APUDDns'
 });
 
+// CART 
+let cartCount = 0; 
+let cartItems = []; 
+let isCartVisible = false; 
 
+// Cart count display
+const cartCountDisplay = document.getElementById('cartCountContainer');
+const cartIcon = document.createElement('img');
+cartIcon.src = 'images/cart.png'; 
+cartIcon.style.width = '30px'; 
+
+const cartCountText = document.createElement('span');
+cartCountText.style.marginLeft = '5px'; 
+cartCountText.textContent = ` ${cartCount}`;
+
+cartCountDisplay.appendChild(cartIcon);
+cartCountDisplay.appendChild(cartCountText);
+
+// Set up the cart list 
+const cartListDisplay = document.getElementById('cartListContainer');
+const viewCartButton = document.getElementById('viewCartButton');
+
+// Cart display on click
+viewCartButton.addEventListener('click', () => {
+  isCartVisible = !isCartVisible; 
+  
+  if (isCartVisible) {
+    cartListDisplay.innerHTML = ''; 
+    if (cartItems.length > 0) {
+      cartListDisplay.innerHTML = '<h3>Cart Items:</h3>';
+      const list = document.createElement('ul');
+      cartItems.forEach(itemName => {
+        const listItem = document.createElement('li');
+        listItem.textContent = itemName;
+        list.appendChild(listItem);
+        cartListDisplay.innerHTML = '<p> Copy & paste <br> cart selections <br> <br> email to <br> ac@allycadyphotography.com </p>';
+      });
+      cartListDisplay.appendChild(list);
+    } else {
+      cartListDisplay.innerHTML = '<p> Cart is empty.</p>';
+    }
+  } else {
+    cartListDisplay.innerHTML = '';
+  }
+});
+
+
+
+
+// IMAGES 
 const DisplayImages = (containerId, fieldKey) => {
   const container = document.getElementById(containerId);
 
@@ -19,6 +68,7 @@ const DisplayImages = (containerId, fieldKey) => {
   });
 };
 
+// image with name 
 const ImageName = (container, imageAsset, name) => {
   const imgContainer = document.createElement('div');
   imgContainer.style.display = 'inline-block';
@@ -28,6 +78,23 @@ const ImageName = (container, imageAsset, name) => {
   img.src = 'https:' + imageAsset.fields.file.url;
   img.style.width = '300px';
 
+  // click add/remove from cart
+  img.addEventListener('click', () => {
+    if (img.style.filter === 'opacity(70%)') {
+      img.style.filter = 'none';
+      cartCount--; 
+      cartItems = cartItems.filter(item => item !== name); // Remove image name from cart
+    } else {
+      img.style.filter = 'opacity(70%)';
+      cartCount++; 
+      cartItems.push(name); // Add image name to cart
+    }
+    // Update the cart count text
+    cartCountText.textContent = ` ${cartCount}`;
+
+  });
+
+  // Display image name
   const caption = document.createElement('span');
   caption.textContent = name;
   caption.style.display = 'block'; 
@@ -41,6 +108,7 @@ const ImageName = (container, imageAsset, name) => {
 };
 
 
+// Call DisplayImages for the various content sections
 DisplayImages('SleepyHollow_content', 'sleepyHollow');
 DisplayImages('Bristol_content', 'bristol_id');
 DisplayImages('Rehearsal_content', 'RehearsalDinner');
