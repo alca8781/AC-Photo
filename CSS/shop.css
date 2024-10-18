@@ -48,7 +48,11 @@
 
         
     }
-
+    #find h2{
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
     #find .Find1 {
         align-self: center;
         margin: 10px;
