@@ -10,15 +10,12 @@ let isCartVisible = false;
 
 // Cart count display
 const cartCountDisplay = document.getElementById('cartCountContainer');
-const cartIcon = document.createElement('img');
-cartIcon.src = 'images/cart.png'; 
-cartIcon.style.width = '30px'; 
-
 const cartCountText = document.createElement('span');
-cartCountText.style.marginLeft = '5px'; 
+cartCountText.style.marginLeft = '-10px';
+cartCountText.style.marginTop = '20px';  
+cartCountText.style.fontSize = '18px'; 
 cartCountText.textContent = ` ${cartCount}`;
 
-cartCountDisplay.appendChild(cartIcon);
 cartCountDisplay.appendChild(cartCountText);
 
 // Set up the cart list 
