@@ -9,9 +9,6 @@
        
     }
 
-  
-
-
     #shop {
         display: flex;
         flex-direction: row;
@@ -88,7 +85,7 @@
     }
     #shop a:hover {
         color:rgb(185, 180, 180); 
-        transform: scale(1.5); 
+        transform: scale(1.0); 
     }
 
 
