@@ -35,11 +35,11 @@ viewCartButton.addEventListener('click', () => {
         const listItem = document.createElement('li');
         listItem.textContent = itemName;
         list.appendChild(listItem);
-        cartListDisplay.innerHTML = '<p> Copy & paste <br> cart selections <br> <br> email to <br> ac@allycadyphotography.com </p>';
+        cartListDisplay.innerHTML = '<p> copy & paste cart selections <br> and email <br> ac@allycadyphotography.com <br> ---------------------------------</p>';
       });
       cartListDisplay.appendChild(list);
     } else {
-      cartListDisplay.innerHTML = '<p> Cart is empty.</p>';
+      cartListDisplay.innerHTML = '<p> cart is empty.</p>';
     }
   } else {
     cartListDisplay.innerHTML = '';
