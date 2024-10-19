@@ -1,4 +1,4 @@
-@media(min-width:860px) {
+/* @media(min-width:860px) {
  .contactForm h1 {
     font-family: "Rozha One", serif;
     font-weight: 400;
@@ -64,74 +64,155 @@ textarea {
     margin-left: 250px;
     border-radius: 4px;
 }
-} 
+}  */
 
-
+/* 
 @media(max-width:860px) {
     .contactForm h1 {
 
-       font-size: 12pt;
-       margin-top: 20px;
-       margin-bottom: 40px;
-       padding: none;
-       text-align: center;
-       color: rgb(79, 87, 104);
-   
-   }
-   
-   .contactForm {
-       font-family: "Raleway", sans-serif;
-       font-optical-sizing: auto;
-       font-weight: 300;
-       font-style: normal;
-       text-align: left;
-       margin-bottom: 90px;
-       
-   
-   }
-   
-   .FormInput {
-       margin-bottom: 10px;
-       
-   
-   
-   }
-   
-   label {
-       display: block;
-       margin-bottom: 5px;
-       font-size: 10pt;
-   }
-   
-   input {
-   
-       width: 100%;
-       padding: 8px;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-   }
-   
-   textarea {
-       width: 100%;
-       padding: 10px;
-       border: 1px solid #ccc;
-       border-radius: 4px;
-   }
-   
-   #submit {
-       background-color: rgb(79, 87, 104);
-       color: white;
-       padding: 12px;
-       font-size: 8pt;
-   
-       font-family: "Raleway", sans-serif;
-       font-optical-sizing: auto;
-       font-weight: 300;
-       font-style: normal;
-       text-align: left;
-   
-       margin-left: 20px;
-       border-radius: 4px;
-   
-   }
-   } 
+        font-size: 12pt;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: none;
+        text-align: center;
+        color: rgb(79, 87, 104);
+
+    }
+
+    .contactForm {
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+        margin-bottom: 90px;
+
+
+    }
+
+    .FormInput {
+        margin-bottom: 10px;
+
+
+
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 10pt;
+    }
+
+    input {
+
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #submit {
+        background-color: rgb(79, 87, 104);
+        color: white;
+        padding: 12px;
+        font-size: 8pt;
+
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        text-align: left;
+
+        margin-left: 20px;
+        border-radius: 4px;
+
+    }
+} */
+
+
+@media(min-width:860px) {
+    .contactForm {
+        display: block;
+        justify-content: center;
+    }
+
+    .contactForm h1 {
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25pt;
+        margin-top: 60px;
+        margin-bottom: 40px;
+
+        text-align: center;
+        color: rgb(79, 87, 104);
+    }
+
+    .contactForm h2 {
+        font-size: 20pt;
+        text-align: center;
+
+    }
+
+    .contactForm p {
+        font-size: 14pt;
+        text-align: center;
+
+    }
+
+    .contactForm img {
+        width: 500px;
+
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media(max-width:860px) {
+    .contactForm {
+        display: block;
+        justify-content: center;
+    }
+
+    .contactForm h1 {
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20pt;
+        margin-top: 60px;
+        margin-bottom: 40px;
+
+        text-align: center;
+        color: rgb(79, 87, 104);
+    }
+
+    .contactForm h2 {
+        font-size: 14pt;
+        text-align: center;
+
+    }
+
+    .contactForm p {
+        font-size: 12pt;
+        text-align: center;
+
+    }
+
+    .contactForm img {
+        width: 200px;
+
+        display: block;
+        margin: 0 auto;
+    }
+
+
+}
