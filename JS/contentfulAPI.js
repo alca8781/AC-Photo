@@ -18,7 +18,7 @@ cartCountText.textContent = ` ${cartCount}`;
 
 cartCountDisplay.appendChild(cartCountText);
 
-// Set up the cart list 
+// cart list 
 const cartListDisplay = document.getElementById('cartListContainer');
 const viewCartButton = document.getElementById('viewCartButton');
 
