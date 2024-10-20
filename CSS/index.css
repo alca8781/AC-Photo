@@ -52,6 +52,12 @@
         line-height: 1.5em;
     }
 
+    nav ul li a:hover {
+        color: #6d8291;
+        border-bottom: 2px solid rgb(79, 94, 125);
+        
+    }
+
     #headingImg {
         display: block;
         margin: auto;
