@@ -110,3 +110,4 @@ DisplayImages('SleepyHollow_content', 'sleepyHollow');
 DisplayImages('Bristol_content', 'bristol_id');
 DisplayImages('Rehearsal_content', 'RehearsalDinner');
 DisplayImages('FunnyFam_content', 'FunnyFamPhoto');
+DisplayImages('Weppler_content', 'weppler');
