@@ -65,7 +65,7 @@ const DisplayImages = (containerId, fieldKey) => {
   });
 };
 
-// image with name 
+// display image with name 
 const ImageName = (container, imageAsset, name) => {
   const imgContainer = document.createElement('div');
   imgContainer.style.display = 'inline-block';
@@ -105,7 +105,7 @@ const ImageName = (container, imageAsset, name) => {
 };
 
 
-// Call DisplayImages for the various content sections
+// Call DisplayImages for fields
 DisplayImages('SleepyHollow_content', 'sleepyHollow');
 DisplayImages('Bristol_content', 'bristol_id');
 DisplayImages('Rehearsal_content', 'RehearsalDinner');
