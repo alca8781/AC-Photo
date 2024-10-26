@@ -9,7 +9,7 @@
     <link href="CSS/contentful.css" rel="stylesheet">
     <script src="JS/contentfulAPI.js" defer></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <title>Weppler Family Photos</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
@@ -32,12 +34,32 @@
 
 <body>
 
-<h1> Weppler Family Photos</h1>
-<p> Vermont 2020</p>
+    <h1> Weppler Family Photos</h1>
+    <p> Vermont 2020</p>
 
-<section id="top">
-    
-    <div></div>
+    <section id="top">
+
+        <div></div>
+        <nav>
+            <h3 class="sr-only">Gallery Nav</h3>
+            <ul>
+                <li><a href="TheGalleries.html">Back to Galleries</a></li>
+            </ul>
+        </nav>
+
+        <button id="resetCartButton">Clear Cart</button>
+        <div class="cart">
+
+            <button id="viewCartButton">
+                <div id="cartCountContainer"></div>
+                <img src="Images/cart.png">
+            </button>
+            <div id="cartListContainer"></div>
+        </div>
+    </section>
+
+    <div id="Weppler_content" class="Wepplercontainer"></div>
+
     <nav>
         <h3 class="sr-only">Gallery Nav</h3>
         <ul>
@@ -46,41 +68,21 @@
     </nav>
 
 
-    <div class="cart">
-        <button id="viewCartButton">
-            <div id="cartCountContainer"></div> 
-            <img src="Images/cart.png"> 
-            
-        </button>
-        <div id="cartListContainer"></div>
-    </div>
-</section>
+    <!-- Social and copyright  -->
+    <footer>
+        <h2 class="sr-only"> Socials & Copyright </h2>
 
-<div id="Weppler_content" class="Wepplercontainer"></div>
-
-<nav>
-    <h3 class="sr-only">Gallery Nav</h3>
-    <ul>
-        <li><a href="TheGalleries.html">Back to Galleries</a></li>
-    </ul>
-</nav>
-
-
-   <!-- Social and copyright  -->
-   <footer>
-    <h2 class="sr-only"> Socials & Copyright </h2>
-
-    <section class="social">
-        <h3 class="sr-only">Instagram Link</h3>
-        <button id="instagram-button">
-            <img src="Images/insta-logo.jpg" alt="Instagram Logo" id="instagram-logo">
-        </button>
-    </section>
-    <section class="copyright">
-        <h3 class="sr-only">Copyright </h3>
-        Copyright © 2017 Ally Cady Photography - All Rights Reserved.
-    </section>
-</footer>
+        <section class="social">
+            <h3 class="sr-only">Instagram Link</h3>
+            <button id="instagram-button">
+                <img src="Images/insta-logo.jpg" alt="Instagram Logo" id="instagram-logo">
+            </button>
+        </section>
+        <section class="copyright">
+            <h3 class="sr-only">Copyright </h3>
+            Copyright © 2017 Ally Cady Photography - All Rights Reserved.
+        </section>
+    </footer>
 </body>
 
 </html>
