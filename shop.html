@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/index.css" rel="stylesheet">
     <link href="CSS/shop.css" rel="stylesheet">
-    
+
 
     <script src="JS/shop.js" defer></script>
 
@@ -23,7 +23,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Slabo+13px&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 
     <title>Shop</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.ico">
@@ -33,7 +35,7 @@
 <body>
     <h2 class="sr-only"> Logo & Navigation</h2>
 
-    
+
     <!-- Nav and logo -->
     <header>
         <section id="headingImg">
@@ -54,125 +56,126 @@
     </header>
 
     <h1 class="sr-only"> Shop</h1>
+    <section id="find">
+        <h2 class="sr-only"> Find Photos</h2>
+        <div class="Find1">
+            <h2> Find photos from a shoot </h2>
+            <p>
+                To buy or look at photos from an event <br>
+                covered by Ally Cady Photography <br>
+                click find your photos bellow to view.
+            </p>
+            <button id="look-for">Find Your Photos</button>
+        </div>
 
-<section id = "shop"> 
-    
-    <div class="portraits"> 
-    <img src="Images/Shop/portrait.jpg" alt="portrait cover photo">
-    <a href="contact.html"><h2> PORTRAIT</h2></a>
-    </div>
+        <div class="Find2">
+            <img src="Images/Shop/findphoto.jpg" alt="find photos cover photo">
+        </div>
+    </section>
 
-    <div class="wedding">
-    <img src="Images/Shop/wedding.jpg" alt="wedding cover photo">
-    <a href="contact.html"><h2> WEDDING</h2></a>
-    </div>
+    <h2 class="title">Book the Photographer</h2>
+    <section id="shop">
+        <div class="portraits">
+            <img src="Images/Shop/portrait.jpg" alt="portrait cover photo">
+            <a href="contact.html">
+                <h2> PORTRAIT</h2>
+            </a>
+        </div>
 
-    <div class="family">
-    <img src="Images/Shop/family2.jpg" alt="family cover photo">
-    <a href="contact.html"><h2> FAMILY</h2></a>
-    </div>
+        <div class="wedding">
+            <img src="Images/Shop/wedding.jpg" alt="wedding cover photo">
+            <a href="contact.html">
+                <h2> WEDDING</h2>
+            </a>
+        </div>
 
-    <div class="events">
-    <img src="Images/Shop/event.jpg" alt="event cover photo">
-    <a href="contact.html"><h2> EVENT</h2></a>
-    </div>
-</section>
+        <div class="family">
+            <img src="Images/Shop/family2.jpg" alt="family cover photo">
+            <a href="contact.html">
+                <h2> FAMILY</h2>
+            </a>
+        </div>
 
-<section id = "find"> 
-    <h2 class="sr-only"> Find Photos</h2>
-    <div class="Find1"> 
-    <h2> Find photos from a shoot </h2>
-        <p>
-            To buy or look at photos from an event <br> 
-            covered by Ally Cady Photography <br> 
-            click find your photos bellow to view.
-        </p>
+        <div class="events">
+            <img src="Images/Shop/event.jpg" alt="event cover photo">
+            <a href="contact.html">
+                <h2> EVENT</h2>
+            </a>
+        </div>
+    </section>
 
-        <button id="look-for">Find Your Photos</button>
+    <section id="prices">
+        <h2 class="sr-only">Service Prices</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Services<br>
+                        <p>photos sold separately</p>
+                    </th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Studio Shoot</td>
+                    <td>$220/hr</td>
+                </tr>
+                <tr>
+                    <td>Location Shoot</td>
+                    <td>$220/hr</td>
+                </tr>
+                <tr>
+                    <td>Event Coverage</td>
+                    <td>$250/hr</td>
+                </tr>
+                <tr>
+                    <td>Wedding</td>
+                    <td>By Inquiry</td>
+                </tr>
+            </tbody>
 
-        
-    </div>
+            <tbody>
+                <tr>
+                    <th colspan="2">Digital Files</th>
 
-    <div class="Find2"> 
-        <img src="Images/Shop/findphoto.jpg" alt="find photos cover photo">
-    </div>   
+                </tr>
+                <tr>
+                    <td>Single Photo</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>20 Photos</td>
+                    <td>$140</td>
+                </tr>
+                <tr>
+                    <td>50 Photos</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>100 Photos</td>
+                    <td>$500</td>
+                </tr>
+            </tbody>
 
-
-</section>
-
-
-
-
-<section id="prices">
-    <h2 class="sr-only">Service Prices</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Services<br> <p>photos sold separately</p></th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Studio Shoot</td>
-                <td>$220/hr</td>
-            </tr>
-            <tr>
-                <td>Location Shoot</td>
-                <td>$220/hr</td>
-            </tr>
-            <tr>
-                <td>Event Coverage</td>
-                <td>$250/hr</td>
-            </tr>
-            <tr>
-                <td>Wedding</td>
-                <td>By Inquiry</td>
-            </tr>
-        </tbody>
-
-        <tbody>
-            <tr>
-                <th colspan="2">Digital Files</th>
-
-            </tr>
-            <tr>
-                <td>Single Photo</td>
-                <td>$15</td>
-            </tr>
-            <tr>
-                <td>20 Photos</td>
-                <td>$140</td>
-            </tr>
-            <tr>
-                <td>50 Photos</td>
-                <td>$300</td>
-            </tr>
-            <tr>
-                <td>100 Photos</td>
-                <td>$500</td>
-            </tr>
-        </tbody>
-
-        <tbody>
-            <tr>
-                <th colspan="2">Prints</th>
-            </tr>
-            <tr>
-                <td>Small Print <em>(6x6 or smaller)</em></td>
-                <td>$17</td>
-            </tr>
-            <tr>
-                <td>Large Print <em>(up to 8x12)</em></td>
-                <td>$23</td>
-            </tr>
-            <tr>
-                <td>XL Print <em>(up to 12x18)</em></td>
-                <td>$36</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+            <tbody>
+                <tr>
+                    <th colspan="2">Prints</th>
+                </tr>
+                <tr>
+                    <td>Small Print <em>(6x6 or smaller)</em></td>
+                    <td>$17</td>
+                </tr>
+                <tr>
+                    <td>Large Print <em>(up to 8x12)</em></td>
+                    <td>$23</td>
+                </tr>
+                <tr>
+                    <td>XL Print <em>(up to 12x18)</em></td>
+                    <td>$36</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
 
 
@@ -195,4 +198,5 @@
     </footer>
 
 </body>
+
 </html>

@@ -1,5 +1,13 @@
 @media(min-width:860px){
-
+.title{
+    font-size: 22pt;
+    text-align: center;
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(79, 87, 104); 
+    margin-top: 50px
+}
 
     #shop div {
         flex: 1 1 35%; 
@@ -15,7 +23,7 @@
         justify-content:space-around;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     #shop h2 {
@@ -26,6 +34,7 @@
         font-style: normal;
         font-size: 14pt;
        margin-bottom: 50px;
+
     }
 
     #shop img {
@@ -130,6 +139,7 @@
     #prices p {
         font-size: 8pt;
     }
+
 }
 
 
@@ -139,6 +149,15 @@
         max-width: 350px;
         width: 100%;
         margin: 0 auto;
+    }
+    .title{
+        font-size: 16pt;
+        text-align: center;
+        font-family: "Rozha One", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(79, 87, 104); 
+        margin-top: 30px
     }
 
 
@@ -265,6 +284,16 @@
 
    #prices p {
     font-size: 8pt;
+}
+
+.Find1 h2{
+    font-size: 18pt;
+    text-align: center;
+    font-family: "Rozha One", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255); 
+    margin-top: 50px
 }
    
 }
