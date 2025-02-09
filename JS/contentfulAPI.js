@@ -137,7 +137,7 @@ resetCartButton.addEventListener('click', () => {
   saveCartToLocalStorage();
 
   // Reset image opacities
-  const images = document.querySelectorAll('#SleepyHollow_content img, #Bristol_content img, #Rehearsal_content img, #FunnyFam_content img, #Weppler_content img, #Larson_content img');
+  const images = document.querySelectorAll('#SleepyHollow_content img, #Bristol_content img, #Rehearsal_content img, #FunnyFam_content img, #Weppler_content img, #Larson_content img, #Kelly_content img');
   images.forEach(img => {
     img.style.filter = 'none';
   });
@@ -153,3 +153,4 @@ DisplayImages('Rehearsal_content', 'RehearsalDinner');
 DisplayImages('FunnyFam_content', 'FunnyFamPhoto');
 DisplayImages('Weppler_content', 'weppler');
 DisplayImages('Larson_content', 'larsonFamily');
+DisplayImages('Kelly_content', 'Kelly')
